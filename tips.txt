@@ -11,5 +11,5 @@ or:
 
 export LD_LIBRARY_PATH=/home/mohan/anaconda3/envs/pd/lib:LD_LIBRARY_PATH
 
-paddleocr --image_dir '/home/mohan/GitRepos/PaddleOCR/data/ppocr_img/ch/ch.jpg' --use_angle_cls false --use_gpu true
+paddleocr --image_dir '/home/mohan/GitRepos/PaddleOCR/data/ppocr_img/ch/ch.jpg' --use_angle_cls false --use_gpu true --lang=[ch|en|japan]
 
