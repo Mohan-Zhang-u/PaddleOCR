@@ -1,0 +1,15 @@
+https://stackoverflow.com/questions/46826497/conda-set-ld-library-path-for-env-only
+
+cd /home/mohan/anaconda3/envs/pd
+mkdir -p ./etc/conda/activate.d
+mkdir -p ./etc/conda/deactivate.d
+touch ./etc/conda/activate.d/env_vars.sh
+touch ./etc/conda/deactivate.d/env_vars.sh
+echo -e '#!/bin/sh \n\nexport LD_LIBRARY_PATH=/home/mohan/anaconda3/envs/pd/lib:LD_LIBRARY_PATH\n' >> ./etc/conda/activate.d/env_vars.sh
+
+or:
+
+export LD_LIBRARY_PATH=/home/mohan/anaconda3/envs/pd/lib:LD_LIBRARY_PATH
+
+paddleocr --image_dir '/home/mohan/GitRepos/PaddleOCR/data/ppocr_img/ch/ch.jpg' --use_angle_cls false --use_gpu true
+
